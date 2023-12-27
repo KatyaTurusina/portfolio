@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To-do list</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="todo_list.css">
+  </head>
+  
+  <body>
+    <div class="todo-list">
+        <div class="tasks">
+            <div class="tasks__header">
+                <span class="header">Список задач</span>
+                <label for="add_task">
+                    <button id="add_task" type="button" class="task-list__add-button" value="add_item"></button>
+                    <span class="add_label">Добавить</span>
+                </label>
+            </div>
+            <ul class="task-list">
+                <li class="task-list__item">
+                    <div>
+                        <input class="task-list__done" type="checkbox" name="task-done">
+                        <div class="task-description">
+                            <span class="task-list__prio"></span>
+                            <span class="task-list__description">Задача 1</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="task-list__delete-button"></button>
+                        <button type="button" class="task-list__edit-button"></button>
+                    </div>
+                </li>
+                <li class="task-list__item">
+                    <div>
+                        <input class="task-list__done" type="checkbox" name="task-done">
+                        <div class="task-description">
+                            <span class="task-list__prio">⚡</span>
+                            <span class="task-list__description">Задача 2</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="task-list__delete-button"></button>
+                        <button type="button" class="task-list__edit-button"></button>
+                    </div>
+                </li>
+                <li class="task-list__item">
+                    <div>
+                        <input class="task-list__done" type="checkbox" name="task-done">
+                        <div class="task-description">
+                            <span class="task-list__prio"></span>
+                            <span class="task-list__description">Задача 3</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="task-list__delete-button"></button>
+                        <button type="button" class="task-list__edit-button"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="task-form">
+            <form>
+                <div class="card-header">Карточка задачи</div>
+                <div class="card-description">
+                    <label>Задача</label>
+                    <input type="text" name="description" placeholder="Описание задачи">
+                </div>
+                <div class="priority">
+                    <label>
+                        <input class="prio-checkbox" type="checkbox" name="prio">
+                        <span>Высокий приоритет⚡</span>
+                    </label>
+                </div>
+                <div class="save-and-cancel">
+                    <button class="save-button" type="submit">Сохранить</button>
+                    <button type="button" class="task-form__close">Отмена</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="todo_list.js"></script>
+  </body>
+</html>
