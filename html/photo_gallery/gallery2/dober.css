@@ -1,0 +1,21 @@
+figure{
+    text-align: center;
+    background-color:#FFEFD5;
+    border-radius: 10pt;
+   }
+figcaption{
+    border-style:solid;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    padding-bottom: 10pt;
+    padding-top: 5pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    border-radius: 10pt;
+    font-size: 16pt;
+    color: #800000;
+    background-color: #FFE4B5;
+}
+body{
+    background-image: url(photo/bones.jpg);
+}
