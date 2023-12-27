@@ -1,0 +1,29 @@
+caption{ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(163, 49, 4);
+font-size: 30pt;
+padding-top: 10px;
+padding-bottom: 15px;
+border-style: ridge;
+border-color: rgb(255, 165, 106);
+border-radius: 20pt;
+background-color: rgb(250, 240, 228);
+}
+
+table{
+    width: 100%;
+    text-align:center;
+    background-color:rgb(255, 255, 255);
+    color:sienna;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    border-radius: 20pt;
+    margin: 10px auto;
+}
+html{
+    background-image: url(gallery/bones.jpg);
+}
+
+td{
+    height: 4cm;
+}
+
