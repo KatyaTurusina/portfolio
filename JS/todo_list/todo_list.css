@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    padding-inline-start: 0;
+}
+.todo-list {
+    display: grid;
+    min-height: 100%;
+    margin: 0 auto;
+    max-width: 1125px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.header {
+    text-align: left;
+    font: normal normal bold 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #707070;
+}
+.tasks__header label,
+.tasks button{
+    float: right;
+}
+.add_label {
+    text-align: left;
+    font: normal normal normal 14px/17px Roboto;
+    letter-spacing: 0px;
+    color: #707070;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.tasks__header button{
+    appearance: none;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.tasks__header button[value='add_item']::before{
+    content: url(img/plus2.svg);
+}
+.tasks{
+    box-shadow: 0px 0px 6px #00000029;
+    padding: 32px 15px;
+    min-width: 300px;
+}
+.task-list__item{
+    list-style-type: none;
+    height: 40px;
+    margin-left: 0;
+    font: normal normal normal 14px/17px Roboto;
+    letter-spacing: 0px;
+    color: #707070;
+    padding: 11px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.task-list__item button {
+    background:none;
+    appearance: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px 15px;
+}
+.task-list__delete-button::before{
+    content: url(img/delete.svg);
+}
+.task-list__edit-button::before{
+    content: url(img/edit.svg);
+}
+.task-list__done, .prio-checkbox{
+    appearance: none;
+    margin: 0;
+    content: url(img/square.svg);
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task-list__done:checked, .prio-checkbox:checked{
+    content: url(img/checkbox.svg);
+}
+
+.task-list__done:checked + div{
+    text-decoration: line-through;   
+}
+
+.task-list__item:nth-last-child(odd){
+    background-color: #0606060A; ;
+}
+.task-description{
+    float: right;
+    padding: 2px 10px;
+}
+.task-form {
+    display: none;
+}
+.task-form form{
+    padding: 28px;
+}
+.card-header{
+    text-align: left;
+    font: normal normal normal 18px/22px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-bottom: 7px;
+}
+.card-description label,
+.card-description input
+{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font: normal normal normal 14px/17px Roboto;
+    letter-spacing: 0px;
+    color: #707070;
+}
+.card-description label {
+    margin-bottom: 5px;
+}
+.card-description input{
+    border: 1px solid #AAAAAABF;
+}
+.card-description{
+    margin-bottom: 15px;
+}
+.priority{
+    font: normal normal normal 14px/17px Roboto;
+    letter-spacing: 0px;
+    color: #707070;
+    margin-bottom: 17px;
+}
+.priority span{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+}
+.save-button{
+    cursor: pointer;
+    width: 126px;
+    height: 32px;
+    background: #3F88E8 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 32px;
+    text-align: center;
+    font: normal normal normal 14px/17px 'Roboto';
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 8px 26px 7px 26px;
+    margin-right: 15px;
+}
+.task-form__close{
+    cursor: pointer;
+    width: 126px;
+    height: 32px;
+    border: 1px solid #707070;
+    border-radius: 32px;
+    background: none;
+    text-align: center;
+    font: normal normal normal 14px/17px Roboto;
+    letter-spacing: 0px;
+    color: #707070;
+    padding: 8px 26px 7px 26px;
+}
+.task-form {
+    display: none;
+}
+.task-form.shown {
+    display: block;
+    top: 0;
+    position: sticky;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    border-radius: 0px 14px 14px 0px;
+    width: 555px;
+    height: 212px;
+}
+
+.task-list__item--template {
+    display: none;
+}
