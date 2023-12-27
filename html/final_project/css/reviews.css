@@ -1,0 +1,580 @@
+ul {
+    list-style: none;
+ }
+ a {
+    text-decoration: none;
+    outline: none;
+ }
+ img {
+    display: block;
+    
+ }
+ body {
+    font-family: Montserrat, "Montserrat ExtraLight",sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    color: #373737;
+    background: #f7f7f7;
+    width: 100%;
+    transition: .2s ease-in-out;
+    
+ }
+ 
+ *, *:after, *:before {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+ }
+
+ /* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+ header:after, .container:after, footer:after{
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+ /* стилевой класс, который управляет шириной контейнера сетки*/
+ .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15 0 15;
+    /**border: 1px solid black;**/
+    }
+
+ header {
+    width: 100%;
+    background: rgb(50, 116, 114);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 15px solid rgb(192, 195, 64);
+ }
+ /* логотип */
+ .logo {
+    display: block;
+    float: left;
+ }
+ .logo img{
+   width: 100%;
+   height: 100px;
+ }
+ #menu {
+    float: right;
+    margin-right: 20px;
+ }
+ #menu li {
+    display: inline-block;
+    margin-right: 30px;
+ }
+ #menu a {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: block;
+    line-height: 40px;
+    padding: 5px;
+ }
+ #menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+ }
+ #menu li:last-child {
+    margin-right: 0;
+ }
+  /* Кнопка выпадающего списка */
+.dropbtn {
+   background-color: rgb(50, 116, 114);
+   color: white;
+   padding: 16px;
+   font-weight: 600;
+   border: none;
+   font-family: Montserrat;
+   width: 160px;
+   font-size: 16px;
+   border-radius: 5px;
+   text-transform: uppercase;
+ }
+ 
+ .dropdown {
+   position: relative;
+   display: inline-block;
+   margin-right: -25px;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgb(50, 116, 114);
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown-content a:hover {background-color: rgb(50, 116, 114);}
+
+ .dropdown:hover .dropdown-content {display: block;}
+ 
+ .dropdown:hover .dropbtn {background-color: rgba(255, 255, 255, 0.2);}
+
+ .back-button a:hover{
+   opacity: 1;
+   font-size: 20;
+}
+.back-button{
+   margin: 50px 50px 50px 50px;
+   height: 50px;
+   width: 150px;
+ }
+
+.back-button a{
+   color: #f7f7f7;
+   font-size: 25px;
+   text-align: center;
+   height: 50px;
+   width: 150px;
+   line-height: 50px;
+   display: block;
+   float: left;
+   background-color: rgb(134, 183, 57);
+   opacity: 0.8;  
+   
+}
+#caption{
+   margin-bottom: 50px;
+   flex-wrap: wrap;
+   justify-content: center;
+   display:flex;
+   
+}
+#caption p{
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 30px;
+   font-style: italic;
+   font-weight: 900;
+   color:black;
+}
+
+/*отзывы контейнер*/
+.container_reviews{
+   width: 1000px;
+   height: fit-content;
+   display: flex;
+   flex-direction:column;
+   margin: 0px auto 150px auto;
+   min-width: 0;
+}
+.review1{
+   display: flex;
+   height: fit-content;
+}
+.review2{
+   display: flex;
+   height: fit-content;
+}
+.review2 .name{
+  
+   background-color: rgb(219, 243, 181);
+   
+}
+.data{
+   display: flex;
+   flex-direction:column;
+   padding: 10px 10px 0px 0px;
+   
+   display: inline-block;
+   text-align: right;
+   font-size: 25px ;
+   font-style: italic;
+   font-weight: 900;
+   
+}
+.name{
+   padding: 5px 15px 5px 15px;
+   line-height: 1.5;
+   font-weight: bold;
+   background-color: rgb(164, 211, 90) ;
+   text-align: right;
+   font-style: italic;
+   font-weight: 900;
+   margin: 5px 25px 5px 0px;
+   
+}
+.date{
+   padding: 5px 5px 5px 5px;
+   font-size: 15px;
+}
+
+.point{
+   padding: 5px 5px 5px 5px;
+
+}
+
+.text{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction:column;
+   height: fit-content;
+   line-height: 1.5;
+   padding: 10px 10px 10px 10px;
+   font-weight: bold;
+}
+
+/*подвал*/
+footer{
+   width: 100%;
+   padding: 10px;
+   background: rgb(30, 66, 66);
+    margin: -100px auto 0;
+    height: 400px;
+    position: relative;
+}
+.footer-nav{
+  /** border: 1px solid white;**/
+   height: 200px;
+   width: 270px;
+   display: block;
+   float: right;
+   padding: 25 0 0 0;
+}
+.footer-list a,p{
+   color: rgb(255, 255, 255);
+   font-weight: 300;
+   display: block;
+   line-height: 20px;
+   padding: 7px;
+}
+.footer-list a,p{
+   color: rgb(255, 255, 255);
+   font-weight: 300;
+   display: block;
+   line-height: 20px;
+   padding: 7px;
+}.footer-nav a,p{
+   color: rgb(255, 255, 255);
+   font-weight: 320;
+   line-height: 30px;
+}
+.footer-nav a:hover {
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 7px;
+}
+.licence-block{
+   margin-right: 30px;
+   width: 240px;
+}
+.licence-img{
+   height: 30px;
+   width: 130px;
+   margin-left: 50px;
+  
+}
+.licence-block p{
+   font-size: 11px;
+}
+.licence-block:hover{
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 7px;
+}
+.icon{
+   height: 34px;
+   width: 34px;
+   margin: 5 6 0 6;
+}
+.icons{
+   display: flex;
+   margin:0 5 10 5;
+}
+
+
+@media only screen and (max-width:1024px) {
+
+   .container_reviews{
+      width: 800px;
+      height: fit-content;
+      display: flex;
+      flex-direction:column;
+      margin: 0px auto 150px auto;
+      min-width: 0;
+   }
+   #menu {
+      float: right;
+      margin-right: 70px;
+   }
+   #menu li {
+      display:inline-block;
+      margin-right: 30px;
+   }
+      .logo {
+         display: block;
+         float: left;
+         margin-left: 20px;
+      }
+      .logo img{
+         display: block;
+         width: 100%;
+         height: 100px;
+      }
+      footer{
+         width: 100%;
+         padding: 10px;
+         background: rgb(30, 66, 66);
+          margin: -100px auto 0;
+          height: 600px;
+          position: relative;
+      }
+   
+      
+   
+      .footer-nav{
+         /** border: 1px solid white;**/
+          height: 200px;
+          width: 400px;
+          display: block;
+          float:right ;
+          padding: 25px 20px 0px 25px;
+          margin-left: 150px;
+          margin-right: 0px;
+       }
+   
+   } 
+@media only screen and (min-width:776px) and (max-width:1000px) {
+   .container_reviews{
+      width: 800px;
+      height: fit-content;
+      display: flex;
+      flex-direction:column;
+      margin: 0px auto 150px auto;
+      min-width: 0;
+   }
+   #menu li {
+      display:inline-block;
+      margin-right: 30px;
+   }
+      .logo {
+         display: block;
+         float: left;
+         margin-top: 0px;
+         margin-left: 20px;
+      }
+      .logo img{
+         display: block;
+         width: 100%;
+         height: 100px;
+      }
+      footer{
+         width: 100%;
+         padding: 10px;
+         background: rgb(30, 66, 66);
+          margin: -100px auto 0;
+          height: 600px;
+          position: relative;
+      }
+   
+      
+   
+      .footer-nav{
+         /** border: 1px solid white;**/
+          height: 200px;
+          width: 400px;
+          display: block;
+          float:right ;
+          padding: 25px 20px 0px 0px;
+          margin-left: 150px;
+          margin-right: 0px;
+       }
+   
+   } 
+   @media only screen and (max-width:776px) {
+      .container_reviews{
+         width: 300px;
+         height: fit-content;
+         display: flex;
+         flex-direction:column;
+         margin: 0px auto 150px auto;
+         min-width: 0;
+      }
+      body{
+         font-size: 15px ;
+      }
+      footer{
+         width: 100%;
+         padding: 10px;
+         background: rgb(30, 66, 66);
+          margin: -100px auto 0;
+          height: 700px;
+          position: relative;
+      }
+      #menu {
+         float: right;
+         margin-right: 0px;
+      }
+      #menu li {
+         display:block;
+         margin-right: 0px;
+      }
+      .dropbtn {
+         background-color: rgb(50, 116, 114);
+         color: white;
+         padding: 16px;
+         margin-left: -10px;
+         font-weight: 600;
+         border: none;
+         font-family: Montserrat;
+         width: 160px;
+         font-size: 15px;
+         border-radius: 5px;
+         text-align: left;
+         text-transform: uppercase;
+       }
+       .dropdown-content{
+          margin-left: -10px;
+       }
+      .logo {
+         display: block;
+         float: left;
+         margin-top: 20px;
+         margin-left: 20px;
+      }
+      .logo img{
+         display: block;
+         width: 100%;
+         height: 100px;
+      }
+   
+      .footer-nav{
+         /** border: 1px solid white;**/
+         height: 220px;
+         width: 300px;
+         display:block;
+         float: right;
+         padding: 0 0 0 0;
+         margin-left: 200px;
+       }
+      
+      .licence-block p{
+         font-size: 9px;
+         margin-left: 12px;
+     }
+     .licence-block img{
+        height: 19px;
+        width: 90px;
+     }
+     .licence-block{
+        margin-top: 30px;
+      margin-right: 150px;
+      width: 240px;
+      float:right;
+   }
+     .icon{
+      height: 34px;
+      width: 34px;
+      margin: 5 6 15 6;
+      margin-bottom: 10px;
+   }
+     
+      } 
+    
+     
+         @media only screen and (max-width:376px)  {
+            .container_reviews{
+               width: 300px;
+               height: fit-content;
+               display: flex;
+               flex-direction:column;
+               margin: 0px auto 150px auto;
+               min-width: 0;
+            }
+            #menu {
+               float: left;
+               margin-right: 20px;
+            }
+            #menu li {
+               display:block;
+               margin-right: 15px;
+               font-size: 12px;
+            }
+            .logo {
+               display: block;
+               float: left;
+               margin-top: 40px;
+               margin-left: 25px;
+            }
+            
+            .logo img{
+               display: block;
+               width: 100%;
+               height: 100px;
+            }
+
+            .data{
+               display: flex;
+               flex-direction:column;
+               padding: 10px 5px 0px 0px;
+               
+               display: inline-block;
+               text-align: right;
+               font-size: 20px ;
+               font-style: italic;
+               font-weight: 900;
+               
+            }
+            #caption p{
+               text-align: center;
+               text-transform: uppercase;
+               font-size: 25px;
+               font-style: italic;
+               font-weight: 900;
+               color:black;
+            }
+            .text{
+               display: flex;
+               flex-wrap: wrap;
+               flex-direction:column;
+               height: fit-content;
+               line-height: 1.5;
+               padding: 10px 5px 5px 5px;
+               font-weight: bold;
+               font-size: 15px;
+               
+            }
+         
+            footer{
+               width: 100%;
+               padding: 10px;
+               background: rgb(30, 66, 66);
+                margin: -100px auto 0;
+                height: 850px;
+                position: relative;
+            }
+         
+            
+         
+            .footer-nav{
+               
+                height: 200px;
+                width: 300px;
+                display: block;
+                float: left;
+                padding: 25px 20px 0px 20px;
+                margin-left: 20px;
+              
+             }
+             .licence-block{
+               margin-top: 50px;
+             margin-right: 150px;
+             width: 200px;
+             float:right;
+          }
+            } 

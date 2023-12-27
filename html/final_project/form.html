@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,900&display=swap" rel="stylesheet">
+        <link href="css/form.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>form</title>
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+              <a class="logo" href="main_page.html">
+                  <img src="photo/logo.svg">
+              </a>
+              <div class="nav-toggle"><span></span></div>
+              <ul id="menu">
+                <li><div class="dropdown">
+                    <button class="dropbtn">Услуги</button>
+                    <div class="dropdown-content">
+                      <a href="classic.html">Классическая</a>
+                      <a href="general.html">Генеральная</a>
+                      <a href="remont.html">После ремонта</a>
+                      <a href="desinfekcia.html">Дезинфекция</a>
+                    </div>
+                  </div></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="#">Позвонить</a></li>
+              </ul>
+            </nav>
+          </header>
+        <form>
+            <div class="form-inner">
+                <h3>Подать заявку</h3>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+                <p class="list">
+                    <select>
+                    <option>Выберите услугу</option>
+                    <option>Классическая уборка</option>
+                    <option>Генеральная уборка</option>
+                    <option>Уборка после ремонта</option>
+                    <option>Дезинфекция помещения</option>
+                   </select>
+                </p>
+                <input type="text" placeholder="Площадь квартиры (м²) ">
+                <input type="text" placeholder="Номер телефона" maxlength="11">
+                <textarea placeholder="Комментарий..." rows="3"></textarea>
+                <p class="comment">* Мы позвоним вам для подтверждения заявки</p>
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
+        <footer>
+            <div class="container">
+                <a class="logo" href="#">
+                    <img src="photo/logo2.svg">
+                </a>
+                <div class="footer-nav">
+                    <ul class="footer-list">
+                        <li><a href="#">Адреса</a></li>
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Вопрос-ответ</a></li>
+                    </ul>
+                    <div class="icons">
+                        <a href="#"><img class="icon" src="photo/whatsup.png"></a>
+                        <a href="#"><img class="icon" src="photo/instagram.png"></a>
+                        <a href="#"><img class="icon" src="photo/post.png"></a>
+                        <a href="#"><img class="icon" src="photo/location.png"></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <p>Услуги:</p>
+                    <ul class="footer-list">
+                        <li><a href="classic.html">Классическая уборка</a></li>
+                        <li><a href="general.html">Генеральная уборка</a></li>
+                        <li><a href="remont.html">Уборка после ремонта</a></li>
+                        <li><a href="desinfekcia.html">Дезинфекция помещения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.ru">
+                <div class="licence-block">
+                    <img class="licence-img" src="photo/licence.png">
+                    <p>«Attribution-NonCommercial-ShareAlike»</p>
+                </div>
+                </a>
+                </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,463 @@
+
+
+ul {
+    list-style: none;
+ }
+ a {
+    text-decoration: none;
+    outline: none;
+ }
+ img {
+    display: block;
+    
+ }
+ body {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1;
+    color: #373737;
+    background: #f7f7f7;
+    width: 100%;
+    transition: .2s ease-in-out;
+    
+ }
+ 
+ *, *:after, *:before {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+ }
+
+ header:after, .container:after, footer:after{
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+ /* стилевой класс, который управляет шириной контейнера сетки*/
+ .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15 0 15;
+ 
+    }
+
+ header {
+    width: 100%;
+    background: rgb(50, 116, 114);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 15px solid rgb(192, 195, 64);
+ }
+ /* логотип */
+ .logo {
+    display: block;
+    float: left;
+ }
+ .logo img{
+   width: 100%;
+   height: 100px;
+
+ }
+ #menu {
+    float: right;
+ }
+ #menu li {
+    display: inline-block;
+    margin-right: 30px;
+ }
+ #menu a {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: block;
+    line-height: 40px;
+    padding: 5px;
+ }
+ #menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+ }
+ #menu li:last-child {
+    margin-right: 0;
+ }
+ /* Кнопка выпадающего списка */
+.dropbtn {
+   background-color: rgb(50, 116, 114);
+   color: white;
+   padding: 16px;
+   margin-right: -30px;
+   font-weight: 600;
+   border: none;
+   font-family: Montserrat;
+   width: 160px;
+   font-size: 18px;
+   border-radius: 5px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+ }
+ 
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgb(50, 116, 114);
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown-content a:hover {background-color: rgb(50, 116, 114);}
+
+ .dropdown:hover .dropdown-content {display: block;}
+ 
+ .dropdown:hover .dropbtn {background-color: rgba(255, 255, 255, 0.2);}
+ 
+ 
+ /* кнопка назад */
+ .back-button a:hover{
+    opacity: 1;
+    font-size: 20;
+}
+.back-button{
+    margin: 50px 0px 0px 50px;   
+    height: 50px;
+   width: 150px;
+}
+
+.back-button a{
+    color: #f7f7f7;
+    font-size: 25px;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    display: block;
+    float: left;
+    background-color: rgb(134, 183, 57);
+    opacity: 0.8;  
+    
+}
+  /* Photo */
+  .classic-image{
+margin-top: 130px;
+
+}
+  .classic-image img{
+    
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .general-image{
+   margin-top: 130px;
+   
+   }
+     .general-image img{
+       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+       margin-left: auto;
+       margin-right: auto;
+      width: 550px;
+      height:450px ;
+     }
+   
+
+  h2{
+   color: black;
+   font-weight:450;
+   font-size: 28px;
+   text-align: center;
+   padding: 20 0 0 0;
+   font-weight: 600;
+   margin-top: 30px;
+}
+/*описание услуги*/
+.discription {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+   
+}
+
+.discription p{
+   color: black;
+   margin:30 0 40 0;
+   text-align: center;
+   font-size: 26px; 
+   line-height: 38px; 
+}
+
+.price {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top:30px; 
+   flex-wrap: wrap;
+   justify-content: center;
+   display:flex;
+   flex-direction: column;
+   
+}
+.price table{
+   margin-left: auto;
+   margin-right: auto;
+  font-size: 20px;
+  font-style: italic;
+   font-weight: 900;
+  
+}
+
+table{
+   margin: auto;
+   background-color: rgb(239, 238, 238);
+   border-radius: 25px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   }
+  
+   td {
+    text-align: center;
+    border-radius: 40px;
+    height: 50px;
+   }
+.cena{
+   background-color: rgb(224, 223, 223);
+}
+/*кнопка заказать*/
+.service-button a:hover{
+   opacity: 1;
+   font-size: 27;
+}
+.service-button{
+   margin: 20 30 200 0 ;
+}
+.service-button a{
+   color: #f7f7f7;
+   font-size: 25px;
+   text-align: center;
+   height: 50px;
+   width: 200px;
+   line-height: 50px;
+   display: block;
+   float: right;
+   background-color: rgb(134, 183, 57);
+   opacity: 0.8;  
+}
+
+/*подвал*/
+footer{
+   width: 100%;
+   padding: 10px;
+   background: rgb(30, 66, 66);
+    margin: -100px auto 0;
+    height: 350px;
+    position: relative;
+}
+.footer-nav{
+   height: 200px;
+   width: 270px;
+   display: block;
+   float: right;
+   padding: 25 0 0 0;
+}
+.footer-list a,p{
+   color: rgb(255, 255, 255);
+   font-weight: 300;
+   display: block;
+   line-height: 20px;
+   padding: 7px;
+}.footer-nav a,p{
+   color: rgb(255, 255, 255);
+   font-weight: 320;
+   line-height: 30px;
+}
+.footer-nav a:hover {
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 7px;
+}
+.licence-block{
+   margin-right: 30px;
+   width: 240px;
+}
+.licence-img{
+   height: 30px;
+   width: 130px;
+   margin-left: 50px;
+  
+}
+.licence-block p{
+   font-size: 11px;
+}
+.licence-block:hover{
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 7px;
+}
+.icon{
+   height: 34px;
+   width: 34px;
+   margin: 5 6 0 6;
+}
+.icons{
+   display: flex;
+   margin:0 5 10 5;
+}
+@media only screen and (max-width: 776px) {
+   .general-image img{
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      margin-left: auto;
+      margin-right: auto;
+     width: 350px;
+     height:250px ;
+    }
+   .classic-image img{
+      width: 300px;
+      height: 200px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      margin-left: auto;
+      margin-right: auto;
+    }
+   body{
+      font-size: 15px ;
+   }
+   .discription p{
+      color: black;
+      margin:30 0 40 0;
+      text-align: center;
+      font-size: 20px; 
+      line-height: 38px; 
+   }
+
+   #menu li {
+      display:block;
+      margin-right: 30px;
+   }
+   .logo {
+      display: block;
+      float: left;
+      margin-top: 20px;
+      margin-left: 20px;
+   }
+   .logo img{
+      display: block;
+      width: 100%;
+      height: 100px;
+   }
+   .dropbtn {
+      background-color: rgb(50, 116, 114);
+      color: white;
+      padding: 16px;
+      margin-left: -10px;
+      font-weight: 600;
+      border: none;
+      font-family: Montserrat;
+      width: 160px;
+      font-size: 15px;
+      border-radius: 5px;
+      text-align: left;
+    }
+    .dropdown-content{
+      margin-left: -10px;
+  }
+   footer{
+      width: 100%;
+      padding: 10px;
+      background: rgb(30, 66, 66);
+       margin: -100px auto 0;
+       height: 700px;
+       position: relative;
+   }
+
+   .service-button{
+      margin: 50 50 150 auto ;
+      height: 50px;
+      width: 200px;
+      flex-wrap: wrap;
+      display: flex;
+   }
+
+   .footer-nav{
+
+       height: 220px;
+       width: 300px;
+       display:block;
+       float: right;
+       padding: 0 0 0 0;
+       margin-left: 200px;
+    }
+
+    .price table{
+      margin-left: auto;
+      margin-right: auto;
+     font-size: 15px;
+     font-weight:bold;
+     
+   }
+   .licence-block p{
+      font-size: 9px;
+      margin-left: 12px;
+  }
+  .licence-block img{
+     height: 19px;
+     width: 90px;
+  }
+  .licence-block{
+     margin-top: 30px;
+   margin-right: 150px;
+   width: 240px;
+   float:right;
+}
+  .icon{
+   height: 34px;
+   width: 34px;
+   margin: 5 6 15 6;
+   margin-bottom: 10px;
+}
+
+}
+
+@media only screen and (min-width:776px) and (max-width:992px) {
+   .service-button{
+      margin: 50 auto 150 auto;
+      
+      height: 50px;
+      width: 200px;
+      flex-wrap: wrap;
+      display: flex;
+   }
+   .logo img{
+      display: block;
+      width: 100%;
+      height: 100px;
+   }
+   }  
+@media only screen and (max-width:395px) {
+   #menu {
+      float: left;
+      margin-right: 0px;
+   }
+     .licence-block{
+     margin-top: 30px;
+   margin-right: 110px;
+   width: 200px;
+   float:right;
+}
+}
+
