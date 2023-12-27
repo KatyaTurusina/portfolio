@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Конструктор визиток</title>
+</head>
+<body>
+
+    <div class="card_container">
+
+        <div class="card-form">
+            <div class="text-areas">
+
+                <h1>Конструктор визиток</h1>
+                <form onsubmit="drawCard(this); return false;">
+                    <label>Наименование организации</label>
+                    <input type="text" name="organization" value="ООО &quot;Ориентир&quot;">
+
+                    <label>Фамилия, имя, отчество</label>
+                    <input type="text" name="fio" value="Фёдoров Иван Семенович">
+
+                    <div class="fio_colors">
+                        <input type="radio" name="fio-color" value="#202020" checked>
+                        <input type="radio" name="fio-color" value="#3F88E8">
+                        <input type="radio" name="fio-color" value="#E83F56">
+                        <input type="radio" name="fio-color" value="#097A14">
+                        <input type="radio" name="fio-color" value="#DCA40A">
+                        <input type="radio" name="fio-color" value="#DC0AD5">
+                    </div>
+                    
+
+                    <label>Должность</label>
+                    <input type="text" name="position" value="Менеджер по развитию">
+
+                    <div class="position_colors">
+                        <input type="radio" name="position-color" value="#474747" checked>
+                        <input type="radio" name="position-color" value="#202020">
+                        <input type="radio" name="position-color" value="#636363">
+                        <input type="radio" name="position-color" value="#9E9E9E">
+                        <input type="radio" name="position-color" value="#BBBBBB">
+                        <input type="radio" name="position-color" value="#E3E3E3">
+                    </div>
+                    <div class="phones">
+                        <label>Телефон</label>
+                        <input type="text" name="phone" value="8 (999) 123-45-67">
+                    </div>
+
+                    <label>E-mail</label>
+                    <input type="text" name="email" value="fedorov.is@orientir.org">
+
+                    <label>Адрес</label>
+                    <input type="text" name="address" value="Иркутск, Байкальская, 421, оф. 12">
+
+                    <button type="submit">Применить</button>
+                </form>
+            </div>
+
+            <div class="settings">
+                <div class="align_and_size">
+                    <div class="aligns">
+                        <input type="radio" name="align" value="left">
+                        <input type="radio" name="align" value="center" checked>
+                        <input type="radio" name="align" value="right">
+                    </div>
+                    <div class="sizes">
+                        <input type="radio" name="size" value="24px">
+                        <input type="radio" name="size" value="26px" checked>
+                        <input type="radio" name="size" value="28px">
+                    </div>
+                </div>
+                <div class="align_and_size2">
+                    <div class="aligns2">
+                        <input type="radio" name="align2" value="left">
+                        <input type="radio" name="align2" value="center" checked>
+                        <input type="radio" name="align2" value="right">
+                    </div>
+                    <div class="sizes2">
+                        <input type="radio" name="size2" value="14px">
+                        <input type="radio" name="size2" value="16px" checked>
+                        <input type="radio" name="size2" value="18px">
+                    </div>
+                </div>
+                <div class="visibility">
+                    <label for="vis">Отображать</label>
+                    <input type="checkbox" id="vis" name="email_visibility" value="none" checked/>
+                </div>
+                <div class="visibility2">
+                    <label for="vis2">Отображать</label>
+                    <input type="checkbox" id="vis2" name="address_visibility" value="none" checked/>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="card-result">
+            <div class="card">
+                <div class="card__organization">ООО "Ориентир"</div>
+                <div class="card__fio">Фёдoров Иван Семенович</div>
+                <div class="card__position">Менеджер по развитию</div>
+                <div class="card__contacts">
+                    <div class="card__phone">8 (999) 123-45-67</div>
+                    <div class="card__email">fedorov.is@orientir.org</div>
+                    <div class="card__address">Иркутск, Байкальская, 421, оф. 12</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="constructor_vizitok.js"></script>
+</body>
+</html>
