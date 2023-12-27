@@ -170,3 +170,8 @@
 #### [Перейти к папке](https://github.com/KatyaTurusina/QML/blob/main/QML_7/task_2)
 ![Task_for_Login_Page-2023-12-25-17-47-41](https://github.com/KatyaTurusina/QML/assets/130843083/1a5fed5f-c0ca-4b6e-b6cb-1e6eda6790e6)
 
+### Итоговый проект
+![Планировщик-бюджета-2023-12-28-05-05-52-_video-converter com_](https://github.com/KatyaTurusina/portfolio/assets/130843083/9919244d-d125-43eb-a8f0-bb0730e361c3)
+#### [Перейти к папке](https://github.com/KatyaTurusina/QML_project/tree/main/my_app)
+
+
