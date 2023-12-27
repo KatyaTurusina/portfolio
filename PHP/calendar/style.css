@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Comfortaa', cursive;
+  box-sizing: border-box;
+}
+.main_block {
+  margin: 20px 300px;
+  text-align: center;
+}
+
+.div_table { 
+  display:table;
+  margin: auto;
+  border-spacing: 20px;
+  text-align: left;
+  border: 2px solid #444;
+  border-radius: 3px;
+  padding: 5px 3px;
+} 
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline-flex;
+  padding-right: 8px;
+}
+
+.hr {
+  background-color: #aaaaaa;
+  height: 2px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.div_row { 
+  display:table-row;
+} 
+
+.div_cell {
+  display:table-cell;
+}
+
+input[type="text"], input[type="datetime-local"], input[type="date"], input[type="submit"], select, textarea {
+  border: 2px solid #444;
+  border-radius: 3px;
+  padding: 5px 3px;
+}
+
+input[type="text"], textarea {
+  width: 240px;
+}
+
+select {
+  width: 170px;
+}
+
+textarea {
+  height: 54px;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #eee;
+}
+
+.error {
+  color: #d63131;
+  font-size: 12px;
+}
+
+.container_tasks {
+  margin: 60px auto;
+  border: 2px solid #444;
+  border-radius: 3px;
+  width:max-content;
+}
+
+.filter {
+  position: relative;
+  top: -45px;
+  height: 40px;
+}
+
+.div_filter {
+  float: right;
+  position: relative;
+  top: 5px;
+}
+.a_filter {
+  padding: 0 7px;
+  border-left: 2px solid #444;
+  font-size: 14px;
+}
+
+.a_filter:first-child {
+  border-left: none;
+}
+
+.table_tasks { 
+  display:table;
+  margin: 16px 30px;
+  position: relative;
+  top: -40px;
+  width: 93%;
+} 
+
+.row_tasks { 
+  display:table-row;
+}
+
+.row_tasks:nth-child(2n) { 
+  background-color: #eee;
+}
+
+.row_head {
+  background-color: #bbb;
+}
+
+.cell_tasks {
+  display:table-cell;
+  min-width: 15%;
+  padding: 5px;
+  text-align: center;
+}
+
+.cell_tasks:not(:first-child) {
+  border-left: 2px solid #444;
+}
+
+.cell_tasks:nth-child(1) {
+  width: 13%;
+}
+
+.cell_tasks:nth-child(4) {
+  width: 22%;
+}
+.access {
+  color: rgb(0, 186, 0);
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
