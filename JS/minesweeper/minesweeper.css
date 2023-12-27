@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+.msw {
+    display: grid;
+    grid-template-columns: repeat(12, 40px);
+    grid-gap: 8px;
+}
+.msw-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: solid 1px rgb(103, 103, 103);
+    background: rgb(180, 180, 180);
+    border-radius: 2px;
+    cursor: pointer;
+    
+}
+.msw-cell:hover, .flag:hover{
+    outline: solid 2px rgb(131, 131, 255);
+}
+
+.clicked-cell, .msw-cell--mark{
+    background-color: white;
+    cursor: default;
+    font: normal normal bold 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #707070;
+   
+}
+.clicked-cell:hover, .msw-cell--bomb:hover{
+    outline: none;
+}
+
+.flag {
+    width: 88px;
+    text-align: center;
+    height: 50px;
+    font-size: 30px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.switched-flag {
+    background-color: #75c1ff;
+}
+.msw-cell--bomb {
+    background-color: red;
+    cursor: default;
+}
+.msw-cell--bomb::before{
+    content: "💣";
+}
+.msw-cell--mark::before{
+    content: "🚩";
+}
